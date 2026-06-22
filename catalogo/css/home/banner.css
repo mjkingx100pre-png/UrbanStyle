@@ -1,0 +1,282 @@
+.banner {
+    height: 40rem;
+    /* min-height: calc(100vh - 80px); */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    min-width: clamp(10rem, 40vh, 20rem);
+    height: 40rem;
+    /* min-height: clamp(10rem, 40vh, 20rem); */
+    display: flex;
+    color: var(--paper);
+
+}
+
+/* .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*========== SLIDE 1 ==========*/
+.contenido-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.contenido-banner h1 {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.contenido-banner p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contenido-banner button {
+    padding: 18px 40px;
+    background: #D5A019;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flechas {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    transform: translateY(-50%);
+}
+
+.flechas span {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.punto {
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}
+
+.punto.activo {
+    background: #D5A019;
+}
+
+/*========== SLIDE 2 ==========*/
+.oferta {
+    position: absolute;
+    top: 50%;
+    right: 120px;
+    transform: translateY(-50%);
+    width: 450px;
+    background: rgba(0, 0, 0, .45);
+    padding: 40px;
+    color: white;
+    z-index: 10;
+}
+
+.oferta h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.oferta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.oferta span {
+    color: #D5A019;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.oferta p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.oferta button {
+    background: #D5A019;
+    padding: 18px 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*======= SLIDE 2 ======*/
+.coleccion {
+    position: absolute;
+    top: 50%;
+    left: 120px;
+    transform: translateY(-50%);
+    width: 450px;
+    color: white;
+    z-index: 10;
+}
+
+.coleccion h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.coleccion button {
+    background: #D5A019;
+    padding: 18px 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.coleccion button:hover {
+    background: #C58F0B;
+}
+
+.carousel {
+    margin-bottom: 0;
+}
+
+.carousel-item {
+    min-height: calc(100vh - 70px);
+}
+
+.carousel-caption {
+    /* left: auto; */
+    /* right: auto; */
+    top: 45%;
+    align-items: center;
+    transform: translateY(-50%);
+    text-align: center;
+    /* width: 500px; */
+    /* padding: 30px; */
+}
+
+.carousel-caption h1 {
+    font-size: 90px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, .7);
+}
+
+.carousel-caption p {
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    bottom: 20%;
+}
+
+.btn-urban {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #D5A019, #f0c542);
+    border: none;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 18px 45px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: .4s;
+}
+
+.btn-urban:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(213, 160, 25, .5);
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .45);
+}
+
+
+
+.btn-urban:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(213, 160, 25, .5);
+}
+
+.menu a {
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: #D5A019;
+    transition: .3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.carousel-item:nth-child(2) h1 {
+    color: #FFD54A;
+    text-shadow:
+        0 0 10px rgba(255, 213, 74, .8),
+        0 0 25px rgba(255, 213, 74, .6);
+}
+
+/*======= SLIDE 3 ======*/
+.coleccion-slide h1 {
+    font-size: 70px;
+    line-height: 1;
+    max-width: 500px;
+}
+
+.coleccion-slide {
+    text-align: left;
+    left: 8%;
+    right: auto;
+    width: 500px;
+}
+
+.coleccion-slide .btn-urban {
+    background: linear-gradient(135deg, #D5A019, #FFD54A);
+    box-shadow: 0 8px 20px rgba(213, 160, 25, .5);
+}

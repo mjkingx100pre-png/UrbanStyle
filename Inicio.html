@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="catalogo/css/styles.css" />
+  <link rel="stylesheet" href="catalogo/css/home/footers.css">
+  <link rel="stylesheet" href="catalogo/css/home/nav.css">
+  <link rel="stylesheet" href="catalogo/css/home/banner.css" />
+  <link rel="stylesheet" href="catalogo/css/catalogo/Catalogo.css" />
+
+  <!-- ELENEX icons y css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://elenexperu.com/css/tokens.css?v=1781292889">
+  <link rel="stylesheet" href="https://elenexperu.com/css/motion.css?v=1781292889">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Urban Style</title>
+</head>
+
+<body>
+  <nav class="bg-body-tertiary fixed-top">
+    <nav class="header-container container-fluid">
+
+      <div class="mini-carrusel">
+        <div class="carrusel-track">
+          <div class="carrusel-item">
+            <p>Envíos gratis por compras mayores a S/150.00 a todo Lima Metropolitana</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-collapse container-xxl nav-superior">
+        <a class="col d-none d-md-block" href="">
+          <img class="lupa" src="catalogo/image/iconos/lupa.png" alt="">
+        </a>
+
+        <a class="col text-center marca-header" href="Inicio.html">
+          <img src="catalogo/image/home/logonegro.png" alt="Urban Style" class="brand-logo">
+          <span class="brand-name">URBAN STYLE</span>
+        </a>
+
+        <div class="iconos col">
+          <div class="cart-icon-container" id="cart-icon-btn">
+            <img class="carrito" src="catalogo/image/iconos/carrito.png" alt="">
+            <span id="cart-count">0</span>
+          </div>
+          
+          <a href="formulario.html">
+            <img src="catalogo/image/iconos/profile.png" alt="">
+          </a>
+        </div>
+
+        <!-- Botón oculto hasta tamaño pqueño-->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fs-1">
+            <i class="bi bi-list"></i>
+          </span>
+        </button>
+
+        
+
+        <!-- zona que se ejecuta con boton-->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasMenu"
+          aria-labelledby="offcanvasMenuLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">URBAN STYLE</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <form class="d-flex" role="search">
+                <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                <input class="form-control me-2" type="search" placeholder="Producto" aria-label="Search" />
+              </form>
+              <li>
+                <hr class="divider">
+              </li>
+              <li class="nav-item"><a class="nav-link active" href="Hombre.html">HOMBRE</a></li>
+              <li class="nav-item"><a class="nav-link" href="Mujer.html">MUJER</a></li>
+              <li class="nav-item"><a class="nav-link" href="Promociones.html">PROMOCIONES</a></li>
+              <li class="nav-item"><a class="nav-link" href="Nosotros.html">NOSOTROS</a></li>
+              <li class="nav-item"><a class="nav-link" href="Contacto.html">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </nav>
+
+  <!-- para zona que colapsa -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary container-xxl">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse d-none d-md-bloc">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="Hombre.html">HOMBRE</a></li>
+          <li class="nav-item"><a class="nav-link" href="Mujer.html">MUJER</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Promociones.html">PROMOCIONES</a></li>
+          <li class="nav-item"><a class="nav-link" href="Nosotros.html">NOSOTROS</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">CONTACTO</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="banner">
+    <div id="carouselUrban" class="carousel slide">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselUrban" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselUrban" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselUrban" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="catalogo/image/home/banner01.jpeg" class="carrusel-img" alt="banner" />
+
+          <div class="carousel-caption d-md-block ">
+            <h1>URBAN STYLE</h1>
+            <p>Moda urbana para hombre y mujer</p>
+            <a href="catalogo.html" class="btn-urban"> VER CATÁLOGO </a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="catalogo/image/home/banner02.webp" class="carrusel-img" alt="oferta" />
+
+          <div class="carousel-caption">
+            <h1>HASTA 50% OFF</h1>
+            <p>Solo por tiempo limitado</p>
+            <a href="promociones.html" class="btn-urban"> VER OFERTAS </a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="catalogo/image/home/banner03.webp" class="carrusel-img alt=" coleccion" />
+          <div class="carousel-caption ">
+            <h1>EXPRESA TU ESTILO</h1>
+            <p>Nueva colección urbana</p>
+            <a href="catalogo.html" class="btn-urban"> EXPLORAR </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flecha izquierda -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselUrban" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <!-- Flecha derecha -->
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselUrban" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+  <section id="ofertas" class="productos">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="titulo-productos">PRODUCTOS POPULARES</h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-----------------card 1-------------->
+        <div class="col-12 col-md-3" style="margin-bottom: 40px;">
+          <div class="card-producto" >
+            <img class="img-card" src="catalogo/image/catalogo/mujer/OVERSIZE/O7.jpeg" alt="Polera Oversize - Mujer" />
+            <h3>Polera Oversize - Mujer</h3>
+            <p class="precio">S/55</p>
+            <button class="add-to-cart-btn" data-id="1" data-name="Polera Oversize - Mujer" data-price="45">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!-----------card 2--------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/mujer/OVERSIZE/O1.jpeg" alt="Polera Oversize" />
+            <h3>Polera Oversize - Mujer</h3>
+            <p class="precio">S/79</p>
+            <button class="add-to-cart-btn" data-id="2" data-name="Polera Oversize - Mujer" data-price="79">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 3--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/mujer/OVERSIZE/O4.jpeg" alt="Zapatillas Urban" />
+            <h3>Polo Urban - Hombre</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Polo Urban - Hombre" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 4--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/mujer/POLOS/P1.jpeg" alt="Zapatillas Urban" />
+            <h3>Polo Top - Mujer</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Zapatillas Urban" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 5--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/hombre/PH/P1.jpeg" alt="Zapatillas Urban" />
+            <h3>Polo Urban - Hombre</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Zapatillas Urban" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 6--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/hombre/Accesorios/A1.jpeg" alt="Zapatillas Urban" />
+            <h3>Lentes Sol - Hombre</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Lentes Sol - Hombre" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 7--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/hombre/PH/P18.jpeg" alt="Pantalones - Hombre" />
+            <h3>Polera Oversize - Hombre</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Polera Oversize - Hombre" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+        <!----------------card 8--------------------------------------->
+        <div class="col-12 col-md-3">
+          <div class="card-producto">
+            <img class="img-card" src="catalogo/image/catalogo/hombre/Accesorios/A8.jpeg" alt="Zapatillas Urban" />
+            <h3>Gorra Urban - Hombre</h3>
+            <p class="precio">S/120</p>
+            <button class="add-to-cart-btn" data-id="3" data-name="Gorra Urban - Hombre" data-price="120">AGREGAR CARRITO</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!--------------zona de footer---------->
+    <!--zona de footer---------->
+  <section class="pie-intermedio">
+    <div class="footer">
+      <div class="footer-container ">
+        <!-- logo descripción-->
+        <div class="footer-col">
+          <h3>
+            <img class="logo-negro" src="catalogo/image/home/logoblanco.png" alt="...">URBAN STYLE
+          </h3>
+          <p class="footer-text">
+            Marca peruana de moda urbana enfocado en prendas streetwear modernas, comodas y acessibles para jovenes adultos.
+      
+          </p>
+          <a href="#">
+            <a href="libros.html"><img src="https://elenexperu.com/img/libror.webp" alt="Libro de Reclamaciones" class="libro-img"></a>
+          </a>
+        </div>
+        <!-- contacto -->
+        <div class="footer-col">
+          <h3 class="conta">Contáctanos</h3>
+          <ul>
+            <li><i class="bi-clock-fill" style="color: #fff;"></i> Lunes a viernes: 9:00 a.m. - 6:00 p.m.</li>
+            <li><i class="bi bi-envelope-fill" style="color:#fff;"></i> contacto@urbanstyle.pe</li>
+            <li><i class="bi-whatsapp" style="color:#fff;"></i> +51 987 654 321</li>
+            <li>
+            <i class="bi bi-geo-alt-fill" style="color: #fff;"></i>
+            <a>Ubicación: Lima, Perú</a>
+            </li>
+          </ul>
+        </div>
+        <!-- redes sociales -->
+        <div class="footer-col">
+          <h3>SÍGUENOS</h3>
+          <div class="redes">
+            <a href="#" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <!-- metodos de pago -->
+        <div class="footer-col">
+          <h3>MÉTODOS DE PAGO</h3>
+          <div class="payment-logos">
+            <img src="https://elenexperu.com/img/visa.svg" alt="Visa">
+            <img src="https://elenexperu.com/img/mastercard.svg" alt="Mastercard">
+            <img src="https://elenexperu.com/img/diners.svg" alt="Diners Club">
+            <img src="https://elenexperu.com/img/pagoefectivo.svg" alt="Pago Efectivo">
+            <img src="https://elenexperu.com/img/yape.svg" alt="Yape">
+            <img src="https://elenexperu.com/img/plin.svg" alt="Plin">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-container container">
+      <div class="container-creditos">
+        <p>Copyright © Urban Style 2026 | Todos los derechos reservados.</p>
+        <div>
+          <a href="#">Terminos y condiciones</a>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Política de privacidad</a>
+        </div>
+      </div>
+      </div>
+    </footer>
+  </section>
+  </section>
+
+  <!--ventana del carrito compras---------->
+  <aside>
+    <div class="cart-sidebar" id="cart-sidebar" data-bs-smooth-scroll="true">
+      <div class="cart-header">
+        <h2>Tu Carrito</h2>
+        <i class="fa-notdog fa-solid fa-xmark" style="color: rgb(38, 145, 206);" id="close-cart-btn-1"></i>
+      </div>
+      <div class="cart-body" id="cart-items-container">
+        <p class="empty-message">vacio</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-container">
+          <span>Total:</span>
+          <span id="cart-total">S/. 0.00</span>
+        </div>
+        <button class="checkout-btn">generar pago</button>
+      </div>
+    </div>
+  </aside>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="catalogo/carrito.js"></script>
+</body>
+
+</html>
